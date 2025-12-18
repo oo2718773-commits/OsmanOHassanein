@@ -1,0 +1,39 @@
+/* Color Palette */
+:root {
+  --primary-color: #3498db; /* Blue */
+  --secondary-color: #2ecc71; /* Green */
+  --accent-color: #e74c3c; /* Red */
+  --background-color: #f4f4f4; /* Light grey */
+  --text-color: #333; /* Dark grey */
+}
+
+/* Base Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Responsive Design Rules */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 769px) {
+  body {
+    font-size: 16px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
